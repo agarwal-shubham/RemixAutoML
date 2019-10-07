@@ -1175,8 +1175,8 @@ AutoTS <- function(data,
                 Final_metrics <- final_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
               } else {
                 temp_metrics[, ':=' (
@@ -1190,8 +1190,8 @@ AutoTS <- function(data,
                 Temp_metrics <- temp_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
                 Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
               }
@@ -1339,8 +1339,8 @@ AutoTS <- function(data,
                 Final_metrics <- final_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
               } else {
                 temp_metrics[, ':=' (
@@ -1354,8 +1354,8 @@ AutoTS <- function(data,
                 Temp_metrics <- temp_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
                 Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
               }
@@ -1509,8 +1509,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -1524,8 +1524,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -1678,8 +1678,8 @@ AutoTS <- function(data,
                     Final_metrics <- final_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                   } else {
                     temp_metrics[, ':=' (
@@ -1693,8 +1693,8 @@ AutoTS <- function(data,
                     Temp_metrics <- temp_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                     Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                   }
@@ -1848,8 +1848,8 @@ AutoTS <- function(data,
                 Final_metrics <- final_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
               } else {
                 temp_metrics[, ':=' (
@@ -1863,8 +1863,8 @@ AutoTS <- function(data,
                 Temp_metrics <- temp_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
                 Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
               }
@@ -2017,8 +2017,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -2032,8 +2032,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -2188,8 +2188,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -2203,8 +2203,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -2357,8 +2357,8 @@ AutoTS <- function(data,
                     Final_metrics <- final_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                   } else {
                     temp_metrics[, ':=' (
@@ -2372,8 +2372,8 @@ AutoTS <- function(data,
                     Temp_metrics <- temp_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                     Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                   }
@@ -2531,8 +2531,8 @@ AutoTS <- function(data,
                 Final_metrics <- final_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
               } else {
                 temp_metrics[, ':=' (
@@ -2546,8 +2546,8 @@ AutoTS <- function(data,
                 Temp_metrics <- temp_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
                 Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
               }
@@ -2704,8 +2704,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -2719,8 +2719,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -2879,8 +2879,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -2894,8 +2894,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -3052,8 +3052,8 @@ AutoTS <- function(data,
                     Final_metrics <- final_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                   } else {
                     temp_metrics[, ':=' (
@@ -3067,8 +3067,8 @@ AutoTS <- function(data,
                     Temp_metrics <- temp_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                     Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                   }
@@ -3226,8 +3226,8 @@ AutoTS <- function(data,
                 Final_metrics <- final_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
               } else {
                 temp_metrics[, ':=' (
@@ -3241,8 +3241,8 @@ AutoTS <- function(data,
                 Temp_metrics <- temp_metrics[, .(
                   Resid = mean(Resid, na.rm = TRUE),
                   PercentError = mean(PercentError, na.rm = TRUE),
-                  AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -  Absolu))/sum(FC_Eval+1tTRUE),
+                  AbsolutePercentError = AbsolutePercentError,
+                  AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                   SquaredError = mean(SquaredError, na.rm = TRUE))]
                 Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
               }
@@ -3400,8 +3400,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -3415,8 +3415,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -3575,8 +3575,8 @@ AutoTS <- function(data,
                   Final_metrics <- final_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                 } else {
                   temp_metrics[, ':=' (
@@ -3590,8 +3590,8 @@ AutoTS <- function(data,
                   Temp_metrics <- temp_metrics[, .(
                     Resid = mean(Resid, na.rm = TRUE),
                     PercentError = mean(PercentError, na.rm = TRUE),
-                    AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -    Absol))/sum(FC_Eval+1uTRUE),
+                    AbsolutePercentError = AbsolutePercentError,
+                    AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                     SquaredError = mean(SquaredError, na.rm = TRUE))]
                   Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                 }
@@ -3750,8 +3750,8 @@ AutoTS <- function(data,
                     Final_metrics <- final_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                   } else {
                     temp_metrics[, ':=' (
@@ -3765,8 +3765,8 @@ AutoTS <- function(data,
                     Temp_metrics <- temp_metrics[, .(
                       Resid = mean(Resid, na.rm = TRUE),
                       PercentError = mean(PercentError, na.rm = TRUE),
-                      AbsolutePercentError = sum(mean(AbsolutePercent-ror, nsu))/sum(FC_Eval+1m(a.rm = TRUE),
-            -      Abso))/sum(FC_Eval+1lTRUE),
+                      AbsolutePercentError = AbsolutePercentError,
+                      AbsoluteError = mean(AbsoluteError, na.rm = TRUE),
                       SquaredError = mean(SquaredError, na.rm = TRUE))]
                     Final_metrics <- data.table::rbindlist(list(Final_metrics, Temp_metrics), fill = TRUE)
                   }
@@ -3894,8 +3894,12 @@ AutoTS <- function(data,
           data.table::set(k_table, 
                           i = i, 
                           j = "MinError", 
-                          value = as.numeric(data_test_ARI[, mean(AbsolutePercentError,nasum(.rm = TRUE)]))          -      }
-          ))/sum(FC_Eval+1)# Collect model filename
+                          value = as.numeric(data_test_ARI[, mean(AbsolutePercentError,na.rm = TRUE)]))          
+        }
+        
+        
+        
+        # Collect model filename
         EvalList[[i]] <- data_test_ARI
         
         # Increment
@@ -3961,9 +3965,10 @@ AutoTS <- function(data,
             data.table::set(k_table, 
                             i = i, 
                             j = "MinError", 
-                            value = as.numeric(data_test_ARI1[, mean(AbsolutePercentError,nasum(.rm = TRUE)]))          
--      }
-            ))/sum(FC_Eval+1) model filename
+                            value = as.numeric(data_test_ARI1[, mean(AbsolutePercentError,na.rm = TRUE)]))          
+          }
+          
+          # Collect model filename
           EvalList[[i]] <- data_test_ARI1
           
           # Increment
@@ -4031,10 +4036,11 @@ AutoTS <- function(data,
             data.table::set(k_table, 
                             i = i, 
                             j = "MinError", 
-                            value = as.numeric(data_test_ARI2[, mean(AbsolutePercentError,nasum(.rm = TRUE)]))
-          -
-        
-    ))/sum(FC_Eval+1)[[i]] <- data_test_ARI2
+                            value = as.numeric(data_test_ARI2[, mean(AbsolutePercentError,na.rm = TRUE)]))
+          }
+          
+          # Collect model filename
+          EvalList[[i]] <- data_test_ARI2
           
           # Increment
           i <- i + 1
@@ -4100,10 +4106,11 @@ AutoTS <- function(data,
             data.table::set(k_table, 
                             i = i, 
                             j = "MinError", 
-                            value = as.numeric(data_test_ARI3[, mean(AbsolutePercentError,nasum(.rm = TRUE)]))
-          -
-        
-    ))/sum(FC_Eval+1)[[i]] <- data_test_ARI3
+                            value = as.numeric(data_test_ARI3[, mean(AbsolutePercentError,na.rm = TRUE)]))
+          }
+          
+          # Collect model filename
+          EvalList[[i]] <- data_test_ARI3
           
           # Increment
           i <- i + 1
@@ -5176,7 +5183,8 @@ AutoTS <- function(data,
               data_test_NN[, ':=' (
                 Resid = get(TargetName) - FC_Eval,
                 PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)              AbsoluteError = abs(get(TargetName) - FC_Eval),
+                AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                AbsoluteError = abs(get(TargetName) - FC_Eval),
                 SquaredError = (get(TargetName) - FC_Eval) ^ 2
               )]
               data.table::set(
@@ -5257,7 +5265,8 @@ AutoTS <- function(data,
           data_test_NN[, ':=' (
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)          AbsoluteError = abs(get(TargetName) - FC_Eval),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
           
@@ -5286,7 +5295,8 @@ AutoTS <- function(data,
           data_test_NN[, ':=' (
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)          AbsoluteError = abs(get(TargetName) - FC_Eval),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
           
@@ -5408,7 +5418,8 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)                AbsoluteError = abs(get(TargetName) - FC_Eval),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
                 data.table::set(
@@ -5489,7 +5500,8 @@ AutoTS <- function(data,
             data_test_NN1[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -5518,7 +5530,8 @@ AutoTS <- function(data,
             data_test_NN1[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -5641,7 +5654,8 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)                AbsoluteError = abs(get(TargetName) - FC_Eval),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
                 data.table::set(
@@ -5722,7 +5736,8 @@ AutoTS <- function(data,
             data_test_NN2[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -5751,7 +5766,8 @@ AutoTS <- function(data,
             data_test_NN2[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -5874,7 +5890,8 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)                AbsoluteError = abs(get(TargetName) - FC_Eval),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
                 data.table::set(
@@ -5955,7 +5972,8 @@ AutoTS <- function(data,
             data_test_NN3[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -5984,7 +6002,8 @@ AutoTS <- function(data,
             data_test_NN3[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1)            AbsoluteError = abs(get(TargetName) - FC_Eval),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
             
@@ -6011,7 +6030,8 @@ AutoTS <- function(data,
       MeanResid = round(base::mean(Resid, na.rm = TRUE), 2),
       MeanPercError = round(base::mean(PercentError, na.rm = TRUE), 5),
       MAPE = round(AbsolutePercentError, 5),
-    -ME = rou))/sum(FC_Eval+1nd(mean(SquaredError, na.rm = TRUE), 4)
+      MAE = round(mean(AbsoluteError, na.rm = TRUE), 4),
+      MSE = round(mean(SquaredError, na.rm = TRUE), 4)
     ),
     by = "ModelName"][order(MAE)][, ID := 1:.N]
   } else if (tolower(EvaluationMetric) == "mape") {
@@ -6019,7 +6039,8 @@ AutoTS <- function(data,
       MeanResid = round(base::mean(Resid, na.rm = TRUE), 2),
       MeanPercError = round(base::mean(PercentError, na.rm = TRUE), 5),
       MAPE = round(AbsolutePercentError, 5),
-    -ME = rou))/sum(FC_Eval+1nd(mean(SquaredError, na.rm = TRUE), 4)
+      MAE = round(mean(AbsoluteError, na.rm = TRUE), 4),
+      MSE = round(mean(SquaredError, na.rm = TRUE), 4)
     ),
     by = "ModelName"][order(MAPE)][, ID := 1:.N]
   } else if (tolower(EvaluationMetric) == "mse") {
@@ -6027,7 +6048,8 @@ AutoTS <- function(data,
       MeanResid = round(base::mean(Resid, na.rm = TRUE), 2),
       MeanPercError = round(base::mean(PercentError, na.rm = TRUE), 5),
       MAPE = round(AbsolutePercentError, 5),
-    -ME = rou))/sum(FC_Eval+1nd(mean(SquaredError, na.rm = TRUE), 4)
+      MAE = round(mean(AbsoluteError, na.rm = TRUE), 4),
+      MSE = round(mean(SquaredError, na.rm = TRUE), 4)
     ),
     by = "ModelName"][order(MSE)][, ID := 1:.N]
   }

@@ -471,7 +471,7 @@ AutoTS <- function(data,
           Resid = Target - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -504,7 +504,7 @@ AutoTS <- function(data,
             Resid = Target - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -539,7 +539,7 @@ AutoTS <- function(data,
             Resid = Target - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -572,7 +572,7 @@ AutoTS <- function(data,
               Resid = Target - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval +
                                                   1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -961,7 +961,7 @@ AutoTS <- function(data,
           Resid = Target - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -994,7 +994,7 @@ AutoTS <- function(data,
             Resid = Target - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -1029,7 +1029,7 @@ AutoTS <- function(data,
             Resid = Target - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -1062,7 +1062,7 @@ AutoTS <- function(data,
               Resid = Target - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval +
                                                   1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -1168,7 +1168,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -1183,7 +1183,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -1332,7 +1332,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -1347,7 +1347,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -1502,7 +1502,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -1517,7 +1517,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -1671,7 +1671,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -1686,7 +1686,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -1841,7 +1841,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -1856,7 +1856,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -2010,7 +2010,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2025,7 +2025,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2181,7 +2181,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2196,7 +2196,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2350,7 +2350,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -2365,7 +2365,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -2524,7 +2524,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -2539,7 +2539,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -2697,7 +2697,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2712,7 +2712,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2872,7 +2872,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -2887,7 +2887,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -3045,7 +3045,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -3060,7 +3060,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -3219,7 +3219,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -3234,7 +3234,7 @@ AutoTS <- function(data,
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval +
                                                       1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -3393,7 +3393,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -3408,7 +3408,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -3568,7 +3568,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -3583,7 +3583,7 @@ AutoTS <- function(data,
                     Resid = get(TargetName) - FC_Eval,
                     PercentError = get(TargetName) / (FC_Eval +
                                                         1) - 1,
-                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                    AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                     AbsoluteError = abs(get(TargetName) - FC_Eval),
                     SquaredError = (get(TargetName) - FC_Eval) ^ 2
                   )]
@@ -3743,7 +3743,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -3758,7 +3758,7 @@ AutoTS <- function(data,
                       Resid = get(TargetName) - FC_Eval,
                       PercentError = get(TargetName) / (FC_Eval +
                                                           1) - 1,
-                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                      AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                       AbsoluteError = abs(get(TargetName) - FC_Eval),
                       SquaredError = (get(TargetName) - FC_Eval) ^ 2
                     )]
@@ -3874,7 +3874,7 @@ AutoTS <- function(data,
           Resid = get(TargetName) - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -3945,7 +3945,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4016,7 +4016,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4086,7 +4086,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4409,7 +4409,7 @@ AutoTS <- function(data,
           Resid = get(TargetName) - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -4442,7 +4442,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4477,7 +4477,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4510,7 +4510,7 @@ AutoTS <- function(data,
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval +
                                                   1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -4697,7 +4697,7 @@ AutoTS <- function(data,
           Resid = get(TargetName) - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -4732,7 +4732,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4769,7 +4769,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -4804,7 +4804,7 @@ AutoTS <- function(data,
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval +
                                                   1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -4943,7 +4943,7 @@ AutoTS <- function(data,
           Resid = get(TargetName) - FC_Eval,
           PercentError = get(TargetName) / (FC_Eval +
                                               1) - 1,
-          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+          AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
           AbsoluteError = abs(get(TargetName) - FC_Eval),
           SquaredError = (get(TargetName) - FC_Eval) ^ 2
         )]
@@ -4979,7 +4979,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -5017,7 +5017,7 @@ AutoTS <- function(data,
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval +
                                                 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -5053,7 +5053,7 @@ AutoTS <- function(data,
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval +
                                                   1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -5183,7 +5183,7 @@ AutoTS <- function(data,
               data_test_NN[, ':=' (
                 Resid = get(TargetName) - FC_Eval,
                 PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                 AbsoluteError = abs(get(TargetName) - FC_Eval),
                 SquaredError = (get(TargetName) - FC_Eval) ^ 2
               )]
@@ -5265,7 +5265,7 @@ AutoTS <- function(data,
           data_test_NN[, ':=' (
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -5295,7 +5295,7 @@ AutoTS <- function(data,
           data_test_NN[, ':=' (
             Resid = get(TargetName) - FC_Eval,
             PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+            AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
             AbsoluteError = abs(get(TargetName) - FC_Eval),
             SquaredError = (get(TargetName) - FC_Eval) ^ 2
           )]
@@ -5418,7 +5418,7 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -5500,7 +5500,7 @@ AutoTS <- function(data,
             data_test_NN1[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -5530,7 +5530,7 @@ AutoTS <- function(data,
             data_test_NN1[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -5654,7 +5654,7 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -5736,7 +5736,7 @@ AutoTS <- function(data,
             data_test_NN2[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -5766,7 +5766,7 @@ AutoTS <- function(data,
             data_test_NN2[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -5890,7 +5890,7 @@ AutoTS <- function(data,
                 data_test_NN[, ':=' (
                   Resid = get(TargetName) - FC_Eval,
                   PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+                  AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
                   AbsoluteError = abs(get(TargetName) - FC_Eval),
                   SquaredError = (get(TargetName) - FC_Eval) ^ 2
                 )]
@@ -5972,7 +5972,7 @@ AutoTS <- function(data,
             data_test_NN3[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
@@ -6002,7 +6002,7 @@ AutoTS <- function(data,
             data_test_NN3[, ':=' (
               Resid = get(TargetName) - FC_Eval,
               PercentError = get(TargetName) / (FC_Eval + 1) - 1,
-              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/sum(FC_Eval+1),
+              AbsolutePercentError = sum(abs(get(TargetName) - FC_Eval))/(sum(get(TargetName))+1),
               AbsoluteError = abs(get(TargetName) - FC_Eval),
               SquaredError = (get(TargetName) - FC_Eval) ^ 2
             )]
